@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SweetZilla</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Toda parte preta do menu -->
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="fa-solid fa-cake-candles fa-lg me-2"></i> SweetZilla
+      </a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrinho.html"><i class="fas fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrossel de fotos -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/car1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Delícias artesanais</h5>
+          <p>Sobremesas feitas com amor e sabor.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/car2.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Doces personalizados</h5>
+          <p>Para tornar seu momento ainda mais especial.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/car3.webp" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>SweetZilla te surpreende!</h5>
+          <p>Uma explosão de sabores incríveis.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+
+  <!-- Parte que fala sobre as qualidades divonicas da confeitaria -->
+
+  <section class="destaques py-5 bg-light">
+    <div class="container">
+      <div class="row text-center justify-content-center">
+        <div class="col-md-2 col-6 mb-4">
+          <i class="fas fa-cake-candles icone-destaque"></i>
+          <p class="texto-destaque">Produtos sempre fresquinhos</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+          <i class="fas fa-star icone-destaque"></i>
+          <p class="texto-destaque">Receitas premiadas</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+          <i class="fas fa-heart icone-destaque"></i>
+          <p class="texto-destaque">Feito com muito carinho</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+          <i class="fas fa-utensils icone-destaque"></i>
+          <p class="texto-destaque">Ingredientes selecionados</p>
+        </div>
+        <div class="col-md-2 col-6 mb-4">
+          <i class="fas fa-truck icone-destaque"></i>
+          <p class="texto-destaque">Entrega rápida e segura</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--  Os doces -->
+<div class="container my-5">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- 1 -->
+    <div class="col">
+      <div class="card sweet-card text-center h-100">
+        <img src="img/pudim.jpg" class="card-img-top" alt="Pudim">
+        <div class="card-body">
+          <h5 class="card-title">Pudim</h5>
+          <p class="card-text">Clássico e cremoso, com calda de caramelo derretendo na boca.</p>
+          <p class="card-preco">R$ 9,90</p>
+          <a href="#" class="btn btn-custom">Quero esse</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 -->
+
+<div class="col">
+      <div class="card sweet-card text-center h-100">
+        <img src="img/brownie.jpg" class="card-img-top" alt="Brownie">
+        <div class="card-body">
+          <h5 class="card-title">Brownie</h5>
+          <p class="card-text">Chocolate intenso com casquinha crocante e interior macio.</p>
+          <p class="card-preco">R$ 7,60</p>
+          <a href="#" class="btn btn-custom">Quero esse</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="col">
+      <div class="card sweet-card text-center h-100">
+        <img src="img/boloOreo.jpg" class="card-img-top" alt="Bolo de Oreo">
+        <div class="card-body">
+          <h5 class="card-title">Bolo de Oreo</h5>
+          <p class="card-text">Feito com massa fofa e pedacinhos crocantes de Oreo.</p>
+          <p class="card-preco">R$ 15,90</p>
+          <a href="#" class="btn btn-custom">Quero esse</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="col">
+      <div class="card sweet-card text-center h-100">
+        <img src="img/boloRedVelvet.jpg" class="card-img-top" alt="Bolo Red Velvet">
+        <div class="card-body">
+          <h5 class="card-title">Bolo Red Velvet</h5>
+          <p class="card-text">Textura macia, cor apaixonante e cobertura de cream cheese.</p>
+          <p class="card-preco">R$ 18,90</p>
+          <a href="#" class="btn btn-custom">Quero esse</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    
+    <div class="col">
+      <div class="card sweet-card text-center h-100">
+        <img src="img/alfajor.jpg" class="card-img-top" alt="Alfajor">
+        <div class="card-body">
+          <h5 class="card-title">Alfajor</h5>
+          <p class="card-text">Dois biscoitos recheados com doce de leite e cobertos com chocolate.</p>
+          <p class="card-preco">R$ 5,50</p>
+          <a href="#" class="btn btn-custom">Quero esse</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="col">
+      <div class="card sweet-card text-center h-100">
+        <img src="img/cupcakeChoco.jpg" class="card-img-top" alt="Cupcake de Chocolate">
+        <div class="card-body">
+          <h5 class="card-title">CupCake de Chocolate</h5>
+          <p class="card-text">Massa fofinha e cobertura cremosa de puro chocolate.</p>
+          <p class="card-preco">R$ 5,80</p>
+          <a href="#" class="btn btn-custom">Quero esse</a>
+        </div>
+      </div>
+    </div>
+
+<!-- 7 -->
+
+<div class="col">
+      <div class="card sweet-card text-center h-100">
+        <img src="img/cupcakeFran.jpg" class="card-img-top" alt="Cupcake de Chocolate">
+        <div class="card-body">
+          <h5 class="card-title">CupCake de Framboesa</h5>
+          <p class="card-text">Sabor suave e frutado com cobertura delicada de framboesa.</p>
+          <p class="card-preco">R$ 5,80</p>
+          <a href="#" class="btn btn-custom">Quero esse</a>
+        </div>
+      </div>
+    </div>
+
+<!-- 8 -->
+
+<div class="col">
+      <div class="card sweet-card text-center h-100">
+        <img src="img/cupcakeOreo.jpg" class="card-img-top" alt="Cupcake de Chocolate">
+        <div class="card-body">
+          <h5 class="card-title">CupCake de Oreo</h5>
+          <p class="card-text">Delicioso e divertido, com pedaços de Oreo na massa e na cobertura.</p>
+          <p class="card-preco">R$ 5,80</p>
+          <a href="#" class="btn btn-custom">Quero esse</a>
+        </div>
+      </div>
+    </div>
+
+<!-- 9 -->
+
+<div class="col">
+      <div class="card sweet-card text-center h-100">
+        <img src="img/donuts.jpg" class="card-img-top" alt="Cupcake de Chocolate">
+        <div class="card-body">
+          <h5 class="card-title">Donuts</h5>
+          <p class="card-text">Macios, doces e cobertos com confeitos encantadores.</p>
+          <p class="card-preco">R$ 3,90</p>
+          <a href="#" class="btn btn-custom">Quero esse</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10 -->
+
+<div class="col">
+      <div class="card sweet-card text-center h-100">
+        <img src="img/sonho.jpg" class="card-img-top" alt="Cupcake de Chocolate">
+        <div class="card-body">
+          <h5 class="card-title">Sonho</h5>
+          <p class="card-text">Recheado com creme leve e coberto com açúcar de confeiteiro.</p>
+          <p class="card-preco">R$ 6,50</p>
+          <a href="#" class="btn btn-custom">Quero esse</a>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div> 
+
+  <!-- Rodapé com as redes sociais -->
+  <footer class="footer">
+    <p>Nos siga nas redes sociais</p>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-whatsapp"></i></a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
